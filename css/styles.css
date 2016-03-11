@@ -1,0 +1,159 @@
+/**********************************
+GENERAL
+***********************************/
+
+/* {
+  border: 1px solid red;
+}*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  line-height: 1.374;
+  color: #fafafa;
+  background-image: url("http://maps.googleapis.com/maps/api/streetview?size=640x640&pano=c7iN2xCJHuAaaaO1IWeLog&heading=-179.31446175698966&fov=90&pitch=1.8212784728924354&sensor=false");
+  min-width: 1280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Remove default list styles, margins, and padding */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/**********************************
+HEADER
+***********************************/
+
+header {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  background-color: #777;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+.social-media {
+  float: right;
+  display: inline-block;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.social-media img {
+  height: 25px;
+  width: 25px;
+}
+
+header p {
+  display: inline-block;
+}
+
+
+
+/**********************************
+PAGE
+***********************************/
+
+.wrapper {
+  min-height: calc(100vh - 50px);
+}
+
+.container {
+  margin: auto;
+  width: 1000px;
+}
+
+section {
+  margin: auto;
+  padding: 0;
+}
+
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  text-align: center;
+  height: 50px;
+  background-color: #777;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+footer .container {
+  position: relative;
+  height: 50px;
+}
+
+.map {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  float: left;
+  display: inline-block;
+}
+
+.address {
+  float: left;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.copyright {
+  display: inline-block;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.phone {
+  float: right;
+  margin-top: 15px;
+}
+
+.hours {
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  display: inline-block;
+  margin: 0;
+  padding-top: 10px;
+  width: 200px;
+}
+
+.hours h2 {
+  margin: 0;
+}
+
+.hours dl {
+  margin: 0;
+  padding: 0;
+}
+
+.hours dt {
+  float: left;
+  margin: 0;
+}
+
+.hours dd {
+  float: right;
+  margin: 0;
+}

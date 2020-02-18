@@ -14,11 +14,16 @@ GENERAL
 html {
   line-height: 1.374;
   color: #fafafa;
-  background-image: url("http://maps.googleapis.com/maps/api/streetview?size=640x640&pano=c7iN2xCJHuAaaaO1IWeLog&heading=-179.31446175698966&fov=90&pitch=1.8212784728924354&sensor=false");
-  min-width: 1280px;
+  background: url("../img/business2.jpg");
+  background-color: black;
+  min-width: 620px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* Remove default list styles, margins, and padding */
@@ -36,20 +41,18 @@ HEADER
 header {
   margin: 0;
   padding: 0;
-  height: 50px;
-  background-color: #777;
-  background: rgba(0, 0, 0, 0.4);
+  height: 70px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 
-header h1 {
+.logo, .social-media {
   display: inline-block;
-  margin: 0;
+  margin: 10px;
 }
 
 .social-media {
   float: right;
-  display: inline-block;
 }
 
 .social-media li {
@@ -73,12 +76,13 @@ PAGE
 ***********************************/
 
 .wrapper {
+  width: 100%;
   min-height: calc(100vh - 50px);
 }
 
 .container {
   margin: auto;
-  width: 1000px;
+  width: 100%;
 }
 
 section {
@@ -96,7 +100,7 @@ footer {
   text-align: center;
   height: 50px;
   background-color: #777;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 footer .container {
@@ -104,12 +108,21 @@ footer .container {
   height: 50px;
 }
 
-.map {
+.map, .hours {
   position: absolute;
-  bottom: 60px;
-  left: 0;
+  bottom: 65px;
+}
+
+.map {
+  right: 0;
   float: left;
   display: inline-block;
+}
+
+.hours {
+  left: 0;
+  display: inline-block;
+  width: 200px;
 }
 
 .address {
@@ -129,16 +142,6 @@ footer .container {
   margin-top: 15px;
 }
 
-.hours {
-  position: absolute;
-  bottom: 75px;
-  right: 0;
-  display: inline-block;
-  margin: 0;
-  padding-top: 10px;
-  width: 200px;
-}
-
 .hours h2 {
   margin: 0;
 }
@@ -156,4 +159,14 @@ footer .container {
 .hours dd {
   float: right;
   margin: 0;
+}
+
+/* Alignment */
+
+.logo, .hours, .address {
+  margin-left: 5%;
+}
+
+.social-media, .phone, .map {
+  margin-right: 5%;
 }
